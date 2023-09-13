@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kvadrāts</title>
+</head>
+<body>
+    <input id="Name"> 
+    <button onclick="getName()">Ievadi savu vārdu</button>
+    <div id="msq"></div>
+<script>
+    function getName()
+    {
+        let name = document.getElementById("Name").value;
+        console.log(name);
+
+        let h1 = document.createElement("h1");
+        h1.innerText=name;
+        document.getElementById("msq").append(h1);
+    }
+</script>
+</body>
+</html>
